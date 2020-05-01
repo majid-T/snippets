@@ -71,3 +71,51 @@ input:checked ~ .main{
     height: 360px;
     animation: rotate 4s;
 }
+
+@keyframes rotate{
+    50%, 100%{transform: rotate(720deg);}
+}
+
+.fa-instagram{
+    top:0;
+    background: #e4405f;
+}
+
+.fa-twitter{
+    top:46px;
+    right: 46px;
+    background: #55acee;
+}
+
+.fa-facebook{
+    right: 0;
+    background:#3B5999;
+}
+
+.fa-telegram{
+    right: 46px;
+    bottom: 46px;
+    background: #0088CC;
+}
+
+.fa-youtube{
+    bottom:0;
+    background: #CD201F;
+}
+
+.fa-github{
+    bottom:46px;
+    left: 46px;
+    background: #Ad5C51;
+}
+
+.fa-google{
+    left:0;
+    background: #C70039;
+}
+
+.fa-envelope{
+    top:46px;
+    left: 46px;
+    background: #F1B592;
+}
