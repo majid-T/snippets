@@ -52,7 +52,7 @@ h1 {
 
 .starsContainer label::before,
 .starsContainer label::after {
-  content: "\foo5";
+  content: "\f005";
   font-family: fontAwesome;
   display: block;
   position: relative;
