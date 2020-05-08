@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #052947,
+    #004e7b,
+    #00c077,
+    #a9ec14
+  );
+}
+
+h1 {
+  font-family: "Poopins", sans-serif;
+  size: 50px;
+  margin-bottom: -25px;
+}
+
+.container {
+}
