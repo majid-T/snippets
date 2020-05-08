@@ -59,3 +59,57 @@ h1 {
   font-size: 50px;
   color: silver;
 }
+
+.starsContainer label::after {
+  position: absolute;
+  color: #f4c724;
+  top: 0;
+  opacity: 0;
+  transition-duration: 0.5s;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.51);
+}
+
+.starsContainer label:hover::after,
+.starsContainer input:checked ~ label::after {
+  opacity: 1;
+}
+
+.starsContainer input {
+  display: none;
+}
+
+.emoji {
+  width: 100px;
+  height: 100px;
+  background-color: #fcbf1e;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: 0.5s;
+}
+
+.eye:nth-child(2) {
+  left: 75%;
+}
+
+.mouth {
+  width: 25px;
+  height: 30px;
+  border-bottom: 3px solid black;
+  border-radius: 0%;
+  position: absolute;
+  top: 45%;
+  left: 37%;
+  transition: 0.5s;
+}
