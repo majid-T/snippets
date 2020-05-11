@@ -15,7 +15,7 @@ body {
 }
 
 .container .card {
-  border-radius: 0px 30px 0px 30px;
+  border-radius: 0px 30px 30px 30px;
   position: relative;
   width: 300px;
   height: 400px;
@@ -25,7 +25,7 @@ body {
 }
 
 .container .card .part {
-  border-radius: 0px 30px 0px 30px;
+  border-radius: 0px 30px 30px 30px;
   position: absolute;
   bottom: 0;
   left: 0;
