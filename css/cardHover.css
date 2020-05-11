@@ -45,3 +45,41 @@ body {
   font-size: 30px;
   text-align: center;
 }
+
+.container .card .part.two {
+  background: #111;
+  transition: 0.5s;
+}
+
+.container .card:hover .part.two {
+  height: 60px;
+}
+
+.container .card:hover .part.part.two h2 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.container .card:nth-child(1) .part.two {
+  background: linear-gradient(45deg, #ccff00, #09afff);
+}
+
+.container .card .part.two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+.container .card .part.two h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
