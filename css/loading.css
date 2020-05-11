@@ -1,8 +1,14 @@
+body {
+  background-color: #000000;
+}
 .container {
+  margin-top: 40%;
   display: flex;
   position: relative;
   width: auto;
   height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container span {
@@ -10,20 +16,22 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #fcb1dd;
+  background: goldenrod;
   margin-top: 50px;
   animation: 1s animate infinite;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes animate {
   20% {
-    background-color: #f0f0f0;
+    background-color: orange;
   }
   50% {
     margin-top: 10px;
   }
   80% {
-    background-color: aqua;
+    background-color: yellow;
   }
 }
 
