@@ -15,15 +15,17 @@ body {
 }
 
 .container .card {
+  border-radius: 0px 30px 0px 30px;
   position: relative;
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  background: #fff;
-  box-shadow: inset 0 15px 60px rgba(0, 0, 0, 0.2);
+  background: #fbcc5b;
+  box-shadow: inset 0 15px 60px rgba(82, 61, 61, 0.2);
 }
 
 .container .card .part {
+  border-radius: 0px 30px 0px 30px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -53,6 +55,7 @@ body {
 
 .container .card:hover .part.two {
   height: 60px;
+  border-radius: 0;
 }
 
 .container .card:hover .part.part.two h2 {
@@ -62,7 +65,7 @@ body {
 }
 
 .container .card:nth-child(1) .part.two {
-  background: linear-gradient(45deg, #ccff00, #09afff);
+  background: linear-gradient(45deg, #ccff00, #fbcd5c);
 }
 
 .container .card .part.two::before {
@@ -70,9 +73,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .container .card .part.two h2 {
