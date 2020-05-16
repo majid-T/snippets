@@ -1,121 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  background-color: lightyellow;
 }
 
-body{
-    font-family: 'Roboto';
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  font-family: "Roboto";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 2s;
+.main {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
 }
 
-.main label{
-    position: fixed;
-    z-index: 1;
-    cursor: pointer;
-    columns: white;
-    background: #4cbaff;
-    padding: 30px 10px 30px 10px;
-    margin: auto;
-    border-radius: 50%;
-    font-size: 16px;
-    letter-spacing: 1px;
-    transition: 0.4s;
+.main label {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  columns: white;
+  background: #4cbaff;
+  padding: 30px 10px 30px 10px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.4s;
 }
 
-.main label:hover{
-    background: #48aff0;
+.main label:hover {
+  background: #48aff0;
 }
 
-.main span{
-    cursor: pointer;
-    position: absolute;
-    color:white;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 45px;
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
-    transition: 4s;
+.main span {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 45px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 4s;
 }
 
-input{
-    display: none;
+input {
+  display: none;
 }
 
-input:checked ~ .main span{
-    opacity: 1;
-    pointer-events: visible;
+input:checked ~ .main span {
+  opacity: 1;
+  pointer-events: visible;
 }
 
-input:checked ~ .main{
-    width: 360px;
-    height: 360px;
-    animation: rotate 4s;
+input:checked ~ .main {
+  width: 360px;
+  height: 360px;
+  animation: rotate 4s;
 }
 
-@keyframes rotate{
-    50%, 100%{transform: rotate(720deg);}
+@keyframes rotate {
+  50%,
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
-.fa-instagram{
-    top:0;
-    background: #e4405f;
+.fa-instagram {
+  top: 0;
+  background: #e4405f;
 }
 
-.fa-twitter{
-    top:46px;
-    right: 46px;
-    background: #55acee;
+.fa-twitter {
+  top: 46px;
+  right: 46px;
+  background: #55acee;
 }
 
-.fa-facebook{
-    right: 0;
-    background:#3B5999;
+.fa-facebook {
+  right: 0;
+  background: #3b5999;
 }
 
-.fa-telegram{
-    right: 46px;
-    bottom: 46px;
-    background: #0088CC;
+.fa-telegram {
+  right: 46px;
+  bottom: 46px;
+  background: #0088cc;
 }
 
-.fa-youtube{
-    bottom:0;
-    background: #CD201F;
+.fa-youtube {
+  bottom: 0;
+  background: #cd201f;
 }
 
-.fa-github{
-    bottom:46px;
-    left: 46px;
-    background: #Ad5C51;
+.fa-github {
+  bottom: 46px;
+  left: 46px;
+  background: #ad5c51;
 }
 
-.fa-google{
-    left:0;
-    background: #C70039;
+.fa-google {
+  left: 0;
+  background: #c70039;
 }
 
-.fa-envelope{
-    top:46px;
-    left: 46px;
-    background: #F1B592;
+.fa-envelope {
+  top: 46px;
+  left: 46px;
+  background: #f1b592;
 }
