@@ -1,6 +1,6 @@
 import pandas as pd
 import tkinter as tk
-import tkinter.ttk as tkk
+import tkinter.ttk as ttk
 from tkinter.filedialog import askopenfile
 
 win = tk.Tk()
