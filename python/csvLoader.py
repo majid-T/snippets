@@ -15,16 +15,21 @@ def open():
         content = ''
         content = pd.read_csv(file)
 
+    data.delete(1.0, tk.END)
     data.insert(tk.END, content)
 
 
 label = tk.Label(win, text='Select a CSV File to be loaded below')
-label.grid(row=0, column=0, padx=8, pady=8)
+label.grid(row=0, column=0, pady=5)
 
 button = tk.Button(win, text='Load File', command=open)
-button.grid(row=0, column=1, padx=8, pady=8)
+button.grid(row=0, column=1, pady=5)
 
-data = tk.Text(win, height=20, width=60)
-data.grid(row=3, column=0, columnspan=2)
+data = tk.Text(win, height=40, width=100)
+data.grid(row=1, column=0, columnspan=2)
+
+labelFooter = tk.Label(
+    win, text='Sample non official Copy- Under dev version majid.shockoohi@gmail.com')
+labelFooter.grid(row=2, column=0, columnspan=2, padx=10, pady=1)
 
 win.mainloop()
