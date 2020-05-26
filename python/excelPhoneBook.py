@@ -9,11 +9,35 @@ win.title('Excel phonebook')
 
 # Functions
 def save():
-    pass
+    fName = fNameInput.get()
+    lName = lNameInput.get()
+    email = emailInput.get()
+    tel = telInput.get()
+
+    wb = Workbook()
+    ws = wb.active
+
+    ws['A1'] = "First name"
+    ws['B1'] = "Last name"
+    ws['C1'] = "Email"
+    ws['D1'] = "Telephone No"
+
+    ws['A2'] = fName
+    ws['B2'] = lName
+    ws['C2'] = email
+    ws['D2'] = tel
+
+    wb.save(r'C:\Users\majid\Desktop\phonebook.xlsx')
+    showinfo('Entry saved!', 'New contact person added!')
+
+    clear()
 
 
 def clear():
-    pass
+    fNameInput.delete(0, tk.END)
+    lNameInput.delete(0, tk.END)
+    emailInput.delete(0, tk.END)
+    telInput.delete(0, tk.END)
 
 
 # GUI building
