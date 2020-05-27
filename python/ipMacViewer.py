@@ -7,13 +7,20 @@ win = tk.Tk()
 win.config(bg='#ffcc00')
 win.title('View Mac and IP')
 
+# Gets ir local ip ex- assigned by WIFI router
+
 
 def getIp():
-    pass
+    hostName = socket.gethostname()
+    ipAdd = socket.gethostbyname(hostName)
+    showinfo('IP Address', f'IP address is : {ipAdd}')
+
+# Gets mac of ethernet port you are using now
 
 
 def getMac():
-    pass
+    macAdd = getmac.get_mac_address()
+    showinfo("MAC Address", f'MAC address is: {macAdd}')
 
 
 ipButton = tk.Button(win, text='IP', bg='#000000',
