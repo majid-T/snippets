@@ -6,6 +6,7 @@ import socket
 win = tk.Tk()
 win.config(bg='#ffcc00')
 win.title('View Mac and IP')
+win.geometry("500x100+300+300")
 
 # Gets ir local ip ex- assigned by WIFI router
 
@@ -24,11 +25,11 @@ def getMac():
 
 
 ipButton = tk.Button(win, text='IP', bg='#000000',
-                     fg='#f1c433', padx=17, pady=17, command=getIp)
-ipButton.pack()
+                     fg='#f1c433', command=getIp)
+ipButton.grid(row=0, column=0, padx=7, pady=7)
 
 macButton = tk.Button(win, text='MAC', bg='#000000',
-                      fg='#f1c433', padx=7, pady=7, command=getMac)
-macButton.pack()
+                      fg='#f1c433', command=getMac)
+macButton.grid(row=0, column=1, padx=7, pady=7)
 
 win.mainloop()
