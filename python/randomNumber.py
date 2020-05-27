@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter.messagebox import showinfo
 import random
 
 win = tk.Tk()
@@ -8,7 +7,8 @@ win.title('Random Number Generator')
 
 
 def play():
-    pass
+    randomNo = random.randint(1, 1000)
+    number.config(text=f'Number is: {randomNo}')
 
 
 number = ttk.Label(win, text='')
