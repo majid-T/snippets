@@ -2,4 +2,4 @@
 
 These are my general code snippets
 
-includes some css and python snippets
+Includes some css , python, solidity snippets.
