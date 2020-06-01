@@ -19,6 +19,15 @@ contract NotaryOffice {
     event Document_Stored(string doc, address docOwner);
     event Document_Checked(string doc, address docChecker);
 
+    // ----- Modifiers -----
+    modifier onlyOwner() {
+        require(
+            msg.sender == officeOwner,
+            "Notary Office:Only owner can checkout"
+        );
+        _;
+    }
+
     //Helper function to cast string to bytes and keccak256 hash byte data
     function hashDoc(string memory _docToHash) private pure returns (bytes32) {
         return keccak256(bytes(_docToHash));
@@ -57,11 +66,7 @@ contract NotaryOffice {
     }
 
     //checkout public function to get ether back to owner
-    function checkout() public {
-        require(
-            msg.sender == officeOwner,
-            "Notary Office:Only owner can checkout"
-        );
+    function checkout() public onlyOwner {
         require(
             address(this).balance > 1,
             "Notary Office:We still havent make that much money"
