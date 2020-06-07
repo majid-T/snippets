@@ -24,7 +24,6 @@ const calender = () => {
   ];
   let d = new Date();
   const setText = (id, val) => {
-    console.log(id);
     if (val < 10) {
       val = "0" + val;
     }

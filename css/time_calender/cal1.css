@@ -1,14 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #03a9f4;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
 #calender {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 85%;
   width: 130px;
   height: 180px;
   background-color: tomato;
   border: #fff;
   border-radius: 5%;
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+}
+
+#calender:hover {
+  transform: scale(1.1, 1.1);
+  transition: ease-out;
+  transition-duration: 1s;
 }
 
 #calender > p {
