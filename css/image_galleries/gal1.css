@@ -41,3 +41,43 @@ input:checked ~ .imgGal1 label:hover img {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   transition: 0.6;
 }
+
+.imgGal1 label:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.imgGal1 label:nth-child(2) {
+  transform: rotate(10deg);
+}
+
+.imgGal1 label:nth-child(3) {
+  transform: rotate(20deg);
+}
+
+.imgGal1 label:nth-child(4) {
+  transform: rotate(30deg);
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ .imgGal1 label {
+  transform: rotate(0);
+}
+
+input:checked ~ .imgGal1 label:nth-child(1) {
+  transform: translateX(-450px);
+}
+
+input:checked ~ .imgGal1 label:nth-child(2) {
+  transform: translateX(-150px);
+}
+
+input:checked ~ .imgGal1 label:nth-child(3) {
+  transform: translateX(150px);
+}
+
+input:checked ~ .imgGal1 label:nth-child(4) {
+  transform: translateX(450px);
+}
