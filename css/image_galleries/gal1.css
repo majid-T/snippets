@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: seagreen;
+  background-color: #888888;
 }
 
 .imgGal1 {
@@ -34,12 +34,12 @@ input:checked ~ .imgGal1 label:hover img {
   cursor: pointer;
   margin: auto;
   position: absolute;
-  width: 250px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  transition: 0.6;
+  transition: 0.6s;
 }
 
 .imgGal1 label:nth-child(1) {
