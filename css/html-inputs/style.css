@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.con-input input{
+input{
     padding: 11px 15px;
     border-radius: 25px;
     border: 0px;
@@ -14,7 +14,7 @@
     min-width: 250px;
 }
 
-.con-input i{
+i{
     position: absolute;
     transition: all .25s ease;
     font-size: 1.3rem;
@@ -43,6 +43,14 @@
     height: 20px;
     transition: all .25s ease;
 }
+
+/* .valid{
+    background-color: #3aba6f;
+}
+
+.invalid{
+    background-color: tomato;
+} */
 
 input.valid ~ .icons .check{
     opacity: 1;
