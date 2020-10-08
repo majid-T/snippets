@@ -14,10 +14,6 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  /* line-height: 1.6; */
-  /* background-color: #fff;
-  color: #333; */
 }
 
 .frame {
@@ -28,11 +24,11 @@ body {
     height: 400px;
     margin-top: -200px;
     margin-left: -200px;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.05);
     overflow: hidden;
     background:var(--dark-color);
-    color:var(--primary-color);
+    color:var(--light-color);
 }
 
 .plan {
@@ -46,7 +42,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border:0.5px solid var(--danger-color)
+    border:0.5px solid var(--primary-color)
 }
 
 .plan.basic:hover~.datas .sms .fill,
@@ -56,7 +52,7 @@ body {
 }
 
 .plan.silver{
-    left:145px;
+    left:150px;
 }
 
 .plan.silver:hover~.datas .sms .fill{
@@ -76,13 +72,13 @@ body {
 }
 
 .plan.gold:hover~.datas .sms .fill,
-.plan.gold:hover~.datas .calls .fill
+.plan.gold:hover~.datas .calls .fill,
 .plan.gold:hover~.datas .internet .fill{
     transform: scaleX(1) translate3d(0,0,0);
 }
 
 .plan:hover{
-    transform: scaleX(1.1) translate3d(0,0,0);
+    transform: scaleY(1.1) translate3d(0,0,0);
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.05);
 }
 
@@ -104,7 +100,7 @@ body {
     font-weight: 400;
     padding: 16px 0 17px 0;
     transition: all 0.3s ease-in-out;
-    color: var(--success-color);
+    color: var(--primary-color);
 }
 
 .plan .price span{
@@ -126,7 +122,7 @@ body {
     width: 380px;
     top: 220px;
     left:10px;
-    background: var(--light-color);
+    background: var(--dark-color);
     color: var(--primary-color);
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -150,13 +146,11 @@ body {
 
 .datas .data .line{
     position: relative;
-    z-index: 1;
-    height: 10px;
+    z-index: 5;
     width: 100%;
-    background-color: #17a2b8;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition: all 0.8s ease-in-out;
+    height: 10px;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
     border-radius: 3px;
 }
 
@@ -165,7 +159,7 @@ body {
     z-index: 1;
     height: 10px;
     width: 100%;
-    background: #17a2b8;
+    background: var(--primary-color);
     transform:scaleX(0);
     transform-origin: 0 50%;
     transition: all 0.8s ease-in-out;
