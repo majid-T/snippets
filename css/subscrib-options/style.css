@@ -89,10 +89,94 @@ body {
 .plan .title{
     height: 36px;
     text-align: center;
-    background: var(--danger-color);
+    background: var(--primary-color);
     color: var(--dark-color);
     font-weight: 600;
     line-height: 36px;
     font-size: 14px;
     transition: all 0.3s ease-in-out;
 }
+
+.plan .price{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 16px 0 17px 0;
+    transition: all 0.3s ease-in-out;
+    color: var(--success-color);
+}
+
+.plan .price span{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+}
+
+.plan .line{
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0 auto 7px auto;
+}
+
+.datas{
+    position: absolute;
+    height: 160px;
+    width: 380px;
+    top: 220px;
+    left:10px;
+    background: var(--light-color);
+    color: var(--primary-color);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.datas .data {
+    margin: 17px 15px 0 15px
+}
+
+.datas .data .text{
+    font-size: 12px;
+    height: 20px;
+}
+
+.datas .data .text .left{
+    float: left;
+}
+
+.datas .data .text .right{
+    float: right;
+}
+
+.datas .data .line{
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    width: 100%;
+    background-color: #17a2b8;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: all 0.8s ease-in-out;
+    border-radius: 3px;
+}
+
+.datas .data .line .fill{
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    width: 100%;
+    background: #17a2b8;
+    transform:scaleX(0);
+    transform-origin: 0 50%;
+    transition: all 0.8s ease-in-out;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
