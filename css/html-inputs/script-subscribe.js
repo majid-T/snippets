@@ -23,7 +23,7 @@ var subFunct = function () {
     } else {
         var emailInput = document.getElementById('userEmail');
         var userEmail = emailInput.value;
-        if (emailRegex.test(userEmail)) {
+        if (userEmail.length !== 0 || emailRegex.test(userEmail)) {
             msgBox.innerText = `${userEmail} was successfuly added to our mailing list.`
             showMsg("OK");
         } else {
