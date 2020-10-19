@@ -1,5 +1,21 @@
 var inputActive = false;
 var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+var msgBox = document.getElementById('msgBox');
+
+var showMsg = function (_msgType) {
+    msgBox.classList.remove('noDisplay')
+    if (_msgType === "OK") {
+        msgBox.classList.add('okMsg')
+    } else {
+        msgBox.classList.add('errMsg')
+    }
+    setInterval(() => {
+        msgBox.classList.add('noDisplay');
+        msgBox.classList.remove('okMsg')
+        msgBox.classList.remove('errMsg')
+
+    }, 7 * 1000);
+}
 
 var subFunct = function () {
     if (!inputActive) {
@@ -8,9 +24,11 @@ var subFunct = function () {
         var emailInput = document.getElementById('userEmail');
         var userEmail = emailInput.value;
         if (emailRegex.test(userEmail)) {
-            window.alert(`${emailInput.value} was added to our mailing list`);
+            msgBox.innerText = `${userEmail} was successfuly added to our mailing list.`
+            showMsg("OK");
         } else {
-            window.alert(`${emailInput.value} is not a valid email`);
+            msgBox.innerText = `Oops! sorry can't add ${userEmail} since it is an invalid email!`
+            showMsg("ERR");
         }
         emailInput.value = '';
         inputActive = false

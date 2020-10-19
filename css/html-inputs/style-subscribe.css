@@ -8,7 +8,7 @@
 html,body{
     display: grid;
     height: 100%;
-    place-items: center;
+    place-items:center;
     background: gold;
 }
 
@@ -108,4 +108,24 @@ html,body{
 
 .wrapper #click{
     display: none;
+}
+
+.msgBox{
+    position: absolute;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.noDisplay{
+    display: none;
+}
+
+.okMsg{
+    border:1px solid green;
+    color:green;
+}
+
+.errMsg{
+    border:1px solid tomato;
+    color:tomato;
 }
