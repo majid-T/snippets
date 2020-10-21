@@ -23,7 +23,7 @@ var subFunct = function () {
     } else {
         var emailInput = document.getElementById('userEmail');
         var userEmail = emailInput.value;
-        if (userEmail.length !== 0 || emailRegex.test(userEmail)) {
+        if (userEmail.length !== 0 && emailRegex.test(userEmail)) {
             msgBox.innerText = `${userEmail} was successfuly added to our mailing list.`
             showMsg("OK");
         } else {
@@ -32,5 +32,16 @@ var subFunct = function () {
         }
         emailInput.value = '';
         inputActive = false
+    }
+}
+
+var validateEmail = function (e) {
+    var isValid = emailRegex.test(e.target.value);
+    if (isValid) {
+        e.target.style.color = 'green';
+        console.log("Valid")
+    } else {
+        e.target.style.color = 'red';
+        console.log("Invalid email")
     }
 }
