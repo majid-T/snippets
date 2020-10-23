@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid sample 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #4f545c;
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+
+        .containerA {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .containerA div {
+            background-color: teal;
+            text-align: center;
+        }
+
+        .containerA div:nth-child(even) {
+            background-color: seagreen;
+        }
+
+        .containerB {
+            display: grid;
+            grid-template-columns: 20% 40% 40%;
+        }
+
+        .containerB div {
+            background-color: teal;
+            text-align: center;
+        }
+
+        .containerB div:nth-child(even) {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Different Grid templates</h1>
+    <h4>3 x 3 even size grid</h4>
+    <div class="containerA">
+        <div class="item1">
+            <p>1</p>
+        </div>
+        <div class="item2">
+            <p>2</p>
+        </div>
+        <div class="item3">
+            <p>3</p>
+        </div>
+        <div class="item4">
+            <p>4</p>
+        </div>
+        <div class="item5">
+            <p>5</p>
+        </div>
+        <div class="item6">
+            <p>6</p>
+        </div>
+        <div class="item7">
+            <p>7</p>
+        </div>
+        <div class="item8">
+            <p>8</p>
+        </div>
+        <div class="item9">
+            <p>9</p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <h4>3 x 3 20 40 40 size grid</h4>
+    <div class="containerB">
+        <div class="item1">
+            <p>1</p>
+        </div>
+        <div class="item2">
+            <p>2</p>
+        </div>
+        <div class="item3">
+            <p>3</p>
+        </div>
+        <div class="item4">
+            <p>4</p>
+        </div>
+        <div class="item5">
+            <p>5</p>
+        </div>
+        <div class="item6">
+            <p>6</p>
+        </div>
+        <div class="item7">
+            <p>7</p>
+        </div>
+        <div class="item8">
+            <p>8</p>
+        </div>
+        <div class="item9">
+            <p>9</p>
+        </div>
+    </div>
+</body>
+
+</html>
