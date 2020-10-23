@@ -7,10 +7,15 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 10px;
             box-sizing: border-box;
             background-color: #4f545c;
-            font-family: sans-serif;
+            font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: white;
+        }
+
+        p {
+            font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
         }
 
         h1,
@@ -28,12 +33,12 @@
         }
 
         .containerA div {
-            background-color: teal;
+            background-color: #202225;
             text-align: center;
         }
 
         .containerA div:nth-child(even) {
-            background-color: seagreen;
+            background-color: #2f3136;
         }
 
         .containerB {
@@ -42,19 +47,20 @@
         }
 
         .containerB div {
-            background-color: teal;
+            background-color: #202225;
             text-align: center;
         }
 
         .containerB div:nth-child(even) {
-            background-color: seagreen;
+            background-color: #2f3136;
         }
     </style>
 </head>
 
 <body>
     <h1>Different Grid templates</h1>
-    <h4>3 x 3 even size grid</h4>
+    <h3>3 x 3</h3>
+    <h5>even size grid</h5>
     <div class="containerA">
         <div class="item1">
             <p>1</p>
@@ -86,7 +92,8 @@
     </div>
     <hr>
     <hr>
-    <h4>3 x 3 20 40 40 size grid</h4>
+    <h3>3 x 3</h3>
+    <h5>[20% 40$ 40%] size grid</h5>
     <div class="containerB">
         <div class="item1">
             <p>1</p>
