@@ -32,6 +32,7 @@
         .containerA div {
             background-color: #202225;
             text-align: center;
+            border: solid 2px;
         }
 
         .containerA div:nth-child(even) {
@@ -46,10 +47,30 @@
         .containerB div {
             background-color: #202225;
             text-align: center;
+            border: solid 2px;
         }
 
         .containerB div:nth-child(even) {
             background-color: #2f3136;
+        }
+
+        .containerC {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .containerC div {
+            background-color: #202225;
+            text-align: center;
+            border: solid 2px;
+        }
+
+        .containerC div:nth-child(even) {
+            background-color: #2f3136;
+        }
+
+        .containerC .item1{
+            grid-area: 1 / 1 / 2 / span 3;
         }
     </style>
 </head>
@@ -118,6 +139,30 @@
         </div>
         <div class="item9">
             <p>9</p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <h3>Custom A</h3>
+    <h5>item1 : grid-area: 1 / 1 / 2 / span 3</h5>
+    <div class="containerC">
+        <div class="item1">
+            <p>1</p>
+        </div>
+        <div class="item2">
+            <p>2</p>
+        </div>
+        <div class="item3">
+            <p>3</p>
+        </div>
+        <div class="item4">
+            <p>4</p>
+        </div>
+        <div class="item5">
+            <p>5</p>
+        </div>
+        <div class="item6">
+            <p>6</p>
         </div>
     </div>
     </body>
