@@ -8,18 +8,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="counter-container">
-            <span class="count" data-target="3000">0</span>
-            <span class="count-detail">XXXX So far</span>
-        </div>
-        <div class="counter-container">
-            <span class="count" data-target="5000">0</span>
-            <span class="count-detail">YYYY So far</span>
-        </div>
-        <div class="counter-container">
-            <span class="count" data-target="10000">0</span>
-            <span class="count-detail">ZZZZ So far</span>
+    <div class="app-container">
+        <div class="container-counters">
+            <div class="counter-container">
+                <span class="count" data-target="3000">0</span>
+                <span class="count-detail">XXXX So far</span>
+            </div>
+            <div class="counter-container">
+                <span class="count" data-target="5000">0</span>
+                <span class="count-detail">YYYY So far</span>
+            </div>
+            <div class="counter-container">
+                <span class="count" data-target="10000">0</span>
+                <span class="count-detail">ZZZZ So far</span>
+            </div>
         </div>
     </div>
 </body>
@@ -27,14 +29,18 @@
     body {
         background-color: #e3e3e3;
         margin: 0;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-family: 'Syne Mono', monospace;
     }
 
-    .container {
+    .app-container {
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-counters {
         width: 100%;
         display: flex;
         justify-content: space-around;
