@@ -10,15 +10,15 @@
 <body>
     <div class="container">
         <div class="counter-container">
-            <span class="count" data-targt="3000">0</span>
+            <span class="count" data-target="3000">0</span>
             <span class="count-detail">XXXX So far</span>
         </div>
         <div class="counter-container">
-            <span class="count" data-targt="5000">0</span>
+            <span class="count" data-target="5000">0</span>
             <span class="count-detail">YYYY So far</span>
         </div>
         <div class="counter-container">
-            <span class="count" data-targt="10000">0</span>
+            <span class="count" data-target="10000">0</span>
             <span class="count-detail">ZZZZ So far</span>
         </div>
     </div>
@@ -58,7 +58,25 @@
     }
 </style>
 <script>
+    //Getting all html elements with class of count
+    let counts = document.querySelectorAll('.count');
 
+    //lopping the list and adding the innerText to reach target
+    counts.forEach((count) => {
+        const updateCount = () => {
+            let currentCount = parseInt(count.innerText);
+            let targetCount = count.getAttribute('data-target');
+
+            let speed = 40;
+            let countIncrease = parseInt(targetCount / speed);
+
+            if (currentCount < targetCount) {
+                count.innerText = currentCount + countIncrease;
+            }
+            setTimeout(updateCount, speed);
+        }
+        updateCount();
+    });
 </script>
 
 </html>
