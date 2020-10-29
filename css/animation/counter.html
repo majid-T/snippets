@@ -24,6 +24,10 @@
             </div>
         </div>
     </div>
+    <div class="heading-container">
+        <span class="heading">
+        </span>
+    </div>
 </body>
 <style>
     body {
@@ -33,8 +37,13 @@
     }
 
     .app-container {
-        min-height: 100vh;
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .heading-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,6 +75,12 @@
 <script>
     //Getting all html elements with class of count
     let counts = document.querySelectorAll('.count');
+    let heading = document.querySelector('.heading');
+    const headingText = "Some_heading";
+    let charIndex = 0;
+    let run_counters = true;
+    let run_heading = true;
+
 
     //lopping the list and adding the innerText to reach target
     counts.forEach((count) => {
@@ -83,6 +98,28 @@
         }
         updateCount();
     });
+
+    //heading text writing
+    const updateHeading = () => {
+        let headingLength = heading.innerText.length;
+
+        if (headingLength < headingText.length) {
+            console.log(heading.innerText)
+            heading.innerText += headingText[charIndex];
+            headingLength = heading.innerText.length
+            charIndex++;
+        }
+
+        setTimeout(updateHeading, 500)
+        // while (headingLength < headingText.length) {
+        //     console.log(heading.innerText)
+        //     heading.innerText += headingText[charIndex];
+        //     headingLength = heading.innerText.length
+        //     charIndex++;
+        // }
+    }
+
+    updateHeading()
 </script>
 
 </html>
