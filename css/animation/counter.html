@@ -84,12 +84,14 @@
     const headingText = "Some_heading";
     let charIndex = 0;
     let run_counters = true;
-    let run_heading = true;
+    let runReading = true;
+
 
 
     //lopping the list and adding the innerText to reach target
     counts.forEach((count) => {
         const updateCount = () => {
+            console.log("UPDATE COUNT is Runnig")
             let currentCount = parseInt(count.innerText);
             let targetCount = count.getAttribute('data-target');
 
@@ -108,6 +110,7 @@
 
     //heading text writing
     const updateHeading = () => {
+        console.log("Update Heading is running")
         let headingLength = heading.innerText.length;
 
         if (headingLength < headingText.length) {
@@ -118,12 +121,6 @@
         }
 
         setTimeout(updateHeading, 200)
-        // while (headingLength < headingText.length) {
-        //     console.log(heading.innerText)
-        //     heading.innerText += headingText[charIndex];
-        //     headingLength = heading.innerText.length
-        //     charIndex++;
-        // }
     }
 
     updateHeading()
