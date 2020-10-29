@@ -89,10 +89,12 @@
             let targetCount = count.getAttribute('data-target');
 
             let speed = 40;
-            let countIncrease = parseInt(targetCount / speed);
+            // let countIncrease = parseInt(targetCount / speed);
 
             if (currentCount < targetCount) {
-                count.innerText = currentCount + countIncrease;
+                count.innerText = currentCount + 200;
+                //Below if we want all to end at the same time
+                // count.innerText = currentCount + countIncrease;
             }
             setTimeout(updateCount, speed);
         }
@@ -110,7 +112,7 @@
             charIndex++;
         }
 
-        setTimeout(updateHeading, 500)
+        setTimeout(updateHeading, 200)
         // while (headingLength < headingText.length) {
         //     console.log(heading.innerText)
         //     heading.innerText += headingText[charIndex];
