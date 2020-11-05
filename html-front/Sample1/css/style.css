@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap');
 
 :root {
-  --primary-color:tomato;
+  --primary-color:#0f324e;
 }
 
 * {
@@ -184,6 +184,9 @@ img {
   border-radius: 15px;
 }
 
+.readmore .grid{
+  grid-template-columns: 4fr 3fr;
+}
 
 .card{
   background-color: #fff;
@@ -204,6 +207,8 @@ img {
   border-radius: 5px;
 }
 
+
+
 .btn-outline{
   background-color: transparent;
   border:1px #fff solid;
@@ -219,6 +224,11 @@ img {
 
 .h-auto{
   height: auto;
+}
+
+.bg-primary, .btn-primary{
+  background-color: var(--primary-color);
+  color:#fff
 }
 
 .my-1{
