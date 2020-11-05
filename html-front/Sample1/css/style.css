@@ -170,6 +170,21 @@ img {
   font-weight: bold;
 }
 
+.reviews .grid{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.reviews .grid > *:first-child{
+  grid-column: 1 / span 2;
+  grid-row: 1 / spane 2;
+}
+
+.reviews .grid > img:first-child{
+  border-radius: 15px;
+}
+
+
 .card{
   background-color: #fff;
   color: #333;
