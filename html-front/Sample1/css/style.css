@@ -118,6 +118,7 @@ img {
   width: 400px;
   padding: 40px;
   z-index: 100;
+  justify-self: end;
 }
 
 .showcase-form .form-control{
