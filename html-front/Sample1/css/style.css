@@ -2,6 +2,9 @@
 
 :root {
   --primary-color:#0f324e;
+  --secondary-color:#047aed;
+  --dark-color:#002240;
+  --light-color: #fefefe;
 }
 
 * {
@@ -231,6 +234,20 @@ img {
   color:#fff
 }
 
+.bg-secondary, .btn-secondary{
+  background-color: var(---var(--secondary-color));
+  color:#fff
+}
+
+.bg-dark, .btn-dark{
+  background-color: var(--dark-color);
+  color:#fff
+}
+
+.bg-light, .btn-light{
+  background-color: var(--light-color);
+  color:var(--dark-color);
+}
 .my-1{
   margin:1rem 0;
 }
