@@ -205,6 +205,10 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
+.footer .social a{
+  margin: 0 10px;
+}
+
 .card{
   background-color: #fff;
   color: #333;
@@ -261,6 +265,10 @@ img {
 .bg-light, .btn-light{
   background-color: var(--light-color);
   color:var(--dark-color);
+}
+
+.bg-primary a, .btn-primary a,.bg-secondary a, .btn-secondary a,.bg-dark a, .btn-dark a{
+  color: #fff;
 }
 
 .lead {
