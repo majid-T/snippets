@@ -68,14 +68,51 @@
     img.g-img+div {
         display: none !important;
     }
+
+    .email-body {
+        background-color: e6e6e6;
+        border-radius: 5px;
+        min-height: 200px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-    <center style="width: 100%; background-color: #f1f1f1;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+    <center style="width: 100%; background-color: #fff;">
         <!-- https://d3gy6bmqz54bwk.cloudfront.net/sites/logo.png -->
-        <header></header>
-        <section></section>
-        <footer></footer>
+        <header>
+            <div style="padding: 10px;text-align: center;"><a href="https://ephimera.com/" target="_blank"><img
+                        src="https://d3gy6bmqz54bwk.cloudfront.net/sites/logo.png" alt="Logo" width="400"></a></div>
+        </header>
+        <section style="display: grid;">
+            <div class="email-body">
+                <img style="height: 200px; width: 200px; position: relative; left: 0; top: 0;"
+                    src="https://bafybeiaoi74xbpaewc37ls5xmswfo3my2h4degrd43jdrzwjip2lgncix4.ipfs.infura-ipfs.io/Immaculate%20Conception.jpg"
+                    alt="token-1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis possimus earum neque vero blanditiis,
+                    ducimus incidunt, non velit ut similique amet iusto eum reprehenderit quam eligendi est, fuga optio
+                    maxime?</p>
+            </div>
+        </section>
+        <footer>
+            <div style="padding: 1rem;text-align: center;font-size: 10px">
+                <p>Any questions? See our <a style="color:#333333" href="https://ephimera.com/faq"
+                        target="_blank">Frequently Asked
+                        Questions</a> page
+                    or reach out. <a style="color:#333333" href="mailto:contact@ephimera.com">Support</a> </p>
+                <h3>© Ephimera 2020. All rights reserved.</h3>
+                <a style="color:#333333" href="#" target="_blank">Unsubscribe from notifications</a> |
+                Click <a style="color:#333333" href="#" target="_blank">here</a> to
+                visit your
+                profile.
+            </div>`
+
+        </footer>
 
 </body>
 
