@@ -33,5 +33,13 @@ const findMMM = (_arrNum) => {
 
     console.log(result)
 
+}
 
+// Get highest and lowest value in array of numbers
+const findHL = (_arrNum) => {
+    const temp = _arrNum.sort((a, b) => a - b)
+    return ({
+        lowest: temp[0],
+        highest: temp[temp.length - 1]
+    })
 }
