@@ -43,3 +43,6 @@ const findHL = (_arrNum) => {
         highest: temp[temp.length - 1]
     })
 }
+
+
+findMMM([, 4, 2, 5, 6, 4, 3, 6, 7, 9])
