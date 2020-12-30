@@ -63,6 +63,26 @@
         <p class="social">@someLink</p>
       </div>
     </div>
-    <script></script>
+    <script>
+      //get handle to the box
+      const box = document.querySelector(".box");
+
+      //add event listener click on item
+      box.addEventListener("click", function () {
+        // define class order and phases
+        let phaseI = "opening";
+        let phaseII = "open";
+
+        //switch between phases based on classlist
+        this.classList.contains(phaseI) &&
+          ([phaseI, phaseII] = [phaseII, phaseI]);
+
+        // add and remove classes
+        this.classList.toggle(phaseI);
+        setTimeout(() => {
+          this.classList.toggle(phaseII);
+        }, 500);
+      });
+    </script>
   </body>
 </html>
