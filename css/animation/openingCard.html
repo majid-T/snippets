@@ -7,6 +7,7 @@
   <body>
     <style>
       .wrap {
+        background-color: firebrick;
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -49,6 +50,11 @@
 
       .box.open > * {
         transform: translateX(0%);
+        visibility: visible;
+      }
+
+      .box > * {
+        visibility: hidden;
       }
     </style>
     <div class="wrap">
