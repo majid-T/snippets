@@ -102,7 +102,7 @@
 <body>
     <div class="card">
         <div class="topMenu">
-            <h3>Some date</h3>
+            <h3 class="date">Some date</h3>
         </div>
         <div class="clock">
             <div class="wrap">
@@ -116,7 +116,7 @@
             <span>
                 <span class="hours"></span>: <span class="mins"></span>
             </span>
-            <p>Some date</p>
+            <p class="dateGMT">Some date</p>
         </div>
     </div>
     <script>
@@ -135,10 +135,13 @@
 
             document.querySelector('.hours').innerHTML=h;
             document.querySelector('.mins').innerHTML=m;
+            document.querySelector('.date').innerHTML=date.toDateString();
+            document.querySelector('.dateGMT').innerHTML=date.toUTCString();
 
             document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
             document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
             document.querySelector('.second').style.transform = `rotate(${second}deg)`;
+
         }
 
         setInterval(clock,inc)
