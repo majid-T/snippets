@@ -8,7 +8,7 @@ public class RunExternalApp{
 
         try {
             //Run the App
-            rt.exec("notepad.exe");
+            rt.exec(args[0]);
         } catch (Exception e) {
             //TODO: handle exception
             System.out.println("ERROR");
