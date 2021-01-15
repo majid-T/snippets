@@ -1,5 +1,4 @@
-const INCREMENT = "INCREMENT";
-const DECREMENT = "DECREMENT";
+import { INCREMENT, DECREMENT } from "../reduxTypes";
 
 const initialState = {
   value: 0,
