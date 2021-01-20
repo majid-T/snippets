@@ -2,7 +2,7 @@
 This a binary search representation in java script with Time complexity O (log n) on search (GET)
 Note1: binary search works on sorted lists
 Note2: this will by default work on array on numbers
-Note3: search element should be number for arithmetic operation
+Note3: search element should be number for arithmetic operation or return a number on comparator
 */
 
 const binarySearch = (array, search, comparator = null) => {
