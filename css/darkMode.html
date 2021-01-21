@@ -5,19 +5,49 @@
     <title>Dark mode</title>
     <style type="text/css">
         :root{
-            --light-color:#c3c3c3;
-            --dark-color:#2f3136;
+            --background-color:#c3c3c3;
+            --text-color:#2f3136;
         }
+
         body{
             padding: 10rem;
-            background-color: var(--light-color);
-            color:var(--dark-)
+            background-color: var(--background-color);
+            color:var(--text-color)
+        }
+
+        .themSwitcher{
+            position: absolute;
+            top:0;
+            right:0;
+            padding: 2rem;
+        }
+
+        .themSwitcher:hover{
+            cursor: pointer;
         }
     </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+     crossorigin="anonymous" />
     </head>
 <body>
+    <span class="themSwitcher" onclick="themSwitch()">    <i class="fas fa-sun"></i></span>
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nulla vitae adipisci harum maiores asperiores, possimus culpa ullam, similique voluptas excepturi dolores distinctio reprehenderit quibusdam qui minima quasi suscipit. Aspernatur.</p>
     </div>
+    <script>
+        function themSwitch(){
+            //Get document declaration
+            const declaration = document.styleSheets[0].cssRules[0].style;
+
+            // Get previous values
+            const prevBack =  declaration.getPropertyValue('--background-color');
+            const prevText = declaration.getPropertyValue('--text-color');
+
+            //toggle values
+            declaration.setProperty('--background-color',prevText);
+            declaration.setProperty('--text-color',prevBack);
+        }
+    </script>
 </body>
 </html>
