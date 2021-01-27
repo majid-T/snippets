@@ -1,6 +1,15 @@
 # Singleton Pattern
 A singleton pattern is used when there is only needs to be a single isntance of class in form of object available during the life cycle of the application.
 
+ <div align="center" >
+      <img
+        src="../media/singleton.png"
+        alt="singleton"
+        width="80%"
+        height="80%"
+      />
+  </div>
+
 ### NOTES - JAVA implementation
 - Make a private property of type class itself
 - Make the constructor private, so it can not be instantiated directly
