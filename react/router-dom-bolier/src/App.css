@@ -1,0 +1,26 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#c3c3c3
+}
+
+nav a{
+  margin-left: 1rem;
+  color:black;
+  text-decoration: none;
+}
+
+nav a:first-child{
+  margin-left: 0;
+}
+
+nav a:hover{
+  color: #030303;
+  text-decoration: underline;
+}
+
+nav a:active{
+  color: #030303;
+  text-decoration: underline;
+}
