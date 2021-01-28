@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export default () => {
   return (
     <nav>
       <NavLink exact to="/">

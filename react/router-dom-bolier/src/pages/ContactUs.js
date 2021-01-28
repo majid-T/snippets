@@ -1,5 +1,5 @@
 import React from "react";
 
-export const ContactUs = () => {
+export default () => {
   return <div>CONTACT US</div>;
 };

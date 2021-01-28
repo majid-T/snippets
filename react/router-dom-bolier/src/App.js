@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
+import Navbar from './components/Navbar'
+// import Navbar from "./components/";
 
 import './App.css';
 
@@ -26,7 +27,7 @@ function App() {
           <Products />
         </Route>{" "}
         <Route exact path="/contact-us">
-          <Services />
+          <ContactUs />
         </Route>
       </Switch>
     </Router>
