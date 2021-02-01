@@ -1,5 +1,5 @@
 # Singleton Pattern
-A singleton pattern is used when there is only needs to be a single isntance of class in form of object available during the life cycle of the application.
+A singleton pattern is used when there is only need for ONE single isntance of class in form of object available during the life cycle of the application. It can be <b>Lazy</b> which means it won't have an instance unless it was called once, or <b>Eager</b> which means it will have an isntance when the class loader loads the class instances.
 
  <div align="center" >
       <img
