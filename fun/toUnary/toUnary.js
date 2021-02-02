@@ -1,8 +1,9 @@
-const MESSAGE = "Some MSG";
+const MESSAGE = process.argv[2] ? process.argv[2] : "Test";
 
 let solution = "";
 let binMsg = "";
 
+// A function which will take a value and returns a uniary value for it
 const toUnary = (_val) => {
   let ans = "";
   let pre = "";
@@ -42,4 +43,7 @@ for (i = 0; i < MESSAGE.length; i++) {
   binMsg += binVal;
 }
 
-console.log(toUnary(binMsg));
+console.log(`The unary value for "${MESSAGE}" is "${toUnary(binMsg)}"`);
+console.log(
+  '\n\nTo get your own message value run "node <codeName.js> <yourMsg>"'
+);
