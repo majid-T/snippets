@@ -1,5 +1,6 @@
 const express = require("express"),
-  bodyParser = require("body-parser");
+  path = require("path");
+    bodyParser = require("body-parser");
 
 /**
  * Class for a base express app
@@ -31,5 +32,8 @@ class ExpressApp {
         extended: true,
       })
     );
+
+    this.appName =
+      this.options.appName || path.basename(process.argv[1], ".js");
   }
 }
