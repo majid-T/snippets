@@ -36,4 +36,22 @@ class ExpressApp {
     this.appName =
       this.options.appName || path.basename(process.argv[1], ".js");
   }
+
+  /**
+   * Start express app listening
+   */
+  startExpress() {
+    const app = this.app;
+    const options = this.options;
+    let server = app;
+
+    app.server = server
+      .listen(options.port, () => {
+        console.log(`Running Server on port ${options.port}`);
+      })
+      .on("error", (e) => {
+        console.log(`Could not start server, error ${e.code}`, e);
+        process.exit(1);
+      });
+  }
 }
