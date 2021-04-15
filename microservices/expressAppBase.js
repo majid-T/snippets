@@ -38,6 +38,11 @@ class ExpressApp {
   }
 
   /**
+   * function to add custom routes by extending classes, override to add custom routes
+   */
+  addCustomRoute() {}
+
+  /**
    * Start express app listening
    */
   startExpress() {
