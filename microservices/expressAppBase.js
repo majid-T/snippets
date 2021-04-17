@@ -59,4 +59,12 @@ class ExpressApp {
         process.exit(1);
       });
   }
+
+  /**
+   * the run function which will start the application
+   *
+   */
+  run() {
+    this.startExpress();
+  }
 }
