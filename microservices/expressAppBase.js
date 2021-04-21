@@ -1,6 +1,7 @@
 const express = require("express"),
-  path = require("path");
-    bodyParser = require("body-parser");
+  cookie = require("cookie"),
+  path = require("path"),
+  bodyParser = require("body-parser");
 
 /**
  * Class for a base express app
@@ -58,6 +59,17 @@ class ExpressApp {
         console.log(`Could not start server, error ${e.code}`, e);
         process.exit(1);
       });
+  }
+
+  /**
+   * Aplication initiation
+   */
+  _initExpress() {
+    //Parse cookies
+    this.app.use((req, res, next) => {
+      req.cookies = cookie.parse(req.headers.cookie || "");
+      next();
+    });
   }
 
   /**
