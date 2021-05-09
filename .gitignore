@@ -105,3 +105,6 @@ dist
 
 # compiled java classes
 *.class
+
+# anything with ig_
+ig_*
