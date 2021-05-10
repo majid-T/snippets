@@ -1,3 +1,7 @@
+/* todo : 
+1- add req/res tracking functionality using uuid
+2- add CORS check and functionality
+*/
 const express = require("express"),
   cookie = require("cookie"),
   path = require("path"),
