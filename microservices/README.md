@@ -18,3 +18,5 @@
 - [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware.
 - [cookie](https://www.npmjs.com/package/cookie) - Basic HTTP cookie parser and serializer for HTTP servers.
 - [xss-filters](https://www.npmjs.com/package/xss-filters) - Just sufficient output filtering to prevent XSS.
+- [object-recursive-iterator](https://www.npmjs.com/package/object-recursive-iterator) - Module to recursively iterate over the enumerable properties of an object.
+- [commander] - The complete solution for node.js command-line interfaces.
