@@ -20,3 +20,8 @@
 - [xss-filters](https://www.npmjs.com/package/xss-filters) - Just sufficient output filtering to prevent XSS.
 - [object-recursive-iterator](https://www.npmjs.com/package/object-recursive-iterator) - Module to recursively iterate over the enumerable properties of an object.
 - [commander] - The complete solution for node.js command-line interfaces.
+- [express-validator] - express-validator is a set of express.js middlewares that wraps validator.js validator and sanitizer functions.
+- [ajv] - The fastest JSON validator for Node.js and browser.
+- [mongodb] - The official MongoDB driver for Node.js.
+- [moment] - A JavaScript date library for parsing, validating, manipulating, and formatting dates.
+- [promise-limit] - Limit outstanding calls to promise returning functions, or a semaphore for promises.
