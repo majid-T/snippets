@@ -1,3 +1,7 @@
+"use strict";
+
+const path = require("path");
+
 /**
  * Format different boolean values to boolean true.
  * @param {String} value
@@ -10,4 +14,13 @@ module.exports.toBooleanTrue = (value) => {
       (typeof value === "string" &&
         ["y", "true", "1"].includes(value.toLowerCase())))
   );
+};
+
+/**
+ * Make application name based on the javascript file name running.
+ * @param {String} [strip=.js] The extention to strip from the file name , defaults to .js
+ * @returns {String}
+ */
+module.exports.scriptName = (strip = ".js") => {
+  return path.basename(process.argv[1], strip);
 };
