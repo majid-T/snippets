@@ -24,3 +24,9 @@ module.exports.toBooleanTrue = (value) => {
 module.exports.scriptName = (strip = ".js") => {
   return path.basename(process.argv[1], strip);
 };
+
+/**
+ * Formats an integer, in case of commander params being 2 arguments,
+ * @type {function(*=): number}
+ */
+module.exports.commanderParseInteger = (str => parseInt(str, 10));
