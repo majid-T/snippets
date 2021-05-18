@@ -26,6 +26,16 @@ module.exports.scriptName = (strip = ".js") => {
 };
 
 /**
+ * Utility method to remove file extension from filename.
+ * @param {String} filename
+ * @returns {String}
+ */
+module.exports.removeFileExtension = (filename) => {
+    const regexp = /^(.+)(\.[^.]+)$/g;
+    return regexp.exec(filename)[1];
+};
+
+/**
  * Formats an integer, in case of commander params being 2 arguments,
  * @type {function(*=): number}
  */
