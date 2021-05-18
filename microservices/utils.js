@@ -40,3 +40,20 @@ module.exports.removeFileExtension = (filename) => {
  * @type {function(*=): number}
  */
 module.exports.commanderParseInteger = (str => parseInt(str, 10));
+
+/**
+ * Normalizing end of lines in a strings to eol character.
+ * @param src
+ * @param eol
+ * @returns {String}
+ */
+module.exports.normalizeEOL = function (src, eol) {
+    if (typeof src !== 'string') {
+        throw new TypeError(`Invalid value received: expected a \`string\`, got \`${typeof str}\``);
+    }
+    if (typeof eol !== 'string') {
+        throw new TypeError(`Invalid end of line value: expected a \`string\`, got \`${typeof eol}\``);
+    }
+
+    return src.replace(new RegExp('(\r\n|\n|\r)', 'g'), eol);
+};
