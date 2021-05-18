@@ -57,3 +57,21 @@ module.exports.normalizeEOL = function (src, eol) {
 
     return src.replace(new RegExp('(\r\n|\n|\r)', 'g'), eol);
 };
+
+/**
+ * Returns the ascii code of the first character of a string, ideally always pass in one str since js does not support char
+ * @param   {char} a
+ * @returns {Number} ascii value.
+ */
+module.exports.ascii = function ascii(a) {
+    return a.charCodeAt(0);
+};
+
+/**
+ * Returns the hexadecimal representation of a byte 0 padded
+ * @param   {number} byte
+ * @returns {string}
+ */
+module.exports.toHex = function toHex(byte) {
+    return toStr(byte, 2, 16);
+};
