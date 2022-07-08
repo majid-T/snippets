@@ -15,7 +15,7 @@
     "cookie": "^0.4.1",
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "mongodb": "^3.6.6",
     "object-recursive-iterator": "^2.1.0",
     "promise-limit": "^2.7.0",
